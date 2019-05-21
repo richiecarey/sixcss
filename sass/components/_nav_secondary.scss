@@ -1,0 +1,41 @@
+.nav_secondary {
+	
+	font-family: $sans-serif;
+	font-size: 1rem;
+	ul {
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0.25rem;
+
+			li {
+					padding: 0.5rem;
+					text-align: center;
+					border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+				a {
+					color: $black;
+					text-decoration: none;
+				}
+				a:hover {
+					color: lighten($black, 10%);
+				}
+			}
+		}	
+}
+@media screen and (min-width: $large) {
+	.nav_secondary {
+		font-size: 1.2rem;
+	}
+	ul {
+		li {
+			border-bottom: 0;
+
+			a {
+
+			}
+			a:hover {
+
+			}
+		}
+	}	
+}

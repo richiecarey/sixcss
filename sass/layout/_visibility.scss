@@ -1,0 +1,30 @@
+.hide-at-small {
+	visibility: hidden;
+}
+.show-at-small {
+	visibility: visible;
+}
+@media screen and (min-width: $medium) {
+	.hide-at-medium {
+		visibility: hidden;
+	}
+	.show-at-medium {
+		visibility: visible;
+	}
+}
+@media screen and (min-width: $large) {
+	.hide-at-large {
+		visibility: hidden;
+	}
+	.show-at-large {
+		visibility: visible;
+	}
+}
+@media screen and (min-width: $x-large) {
+	.hide-at-x-large {
+		visibility: collapse;
+	}
+	.show-at-x-large {
+		visibility: visible;
+	}
+}

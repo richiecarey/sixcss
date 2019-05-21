@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>sixCSS | A Simple Six Column Responsive CSS Framework</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link href="css/main.css" rel='stylesheet' type="text/css">
+	</head>
+	<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="nav_primary">
+				<ul>
+				  <li><a href="#menu1">Page 1</a></li>
+				  <li><a href="#menu2">Page 2</a></li>
+				  <li><a href="#menu3">Page 3</a></li>
+				  <li><a href="#menu4">Page 4</a></li>
+				</ul>
+			</nav>
+			<div class="jumbotron">
+		        <div class="row">
+		          <div class="col-4">
+					<h1>sixCSS</h1>
+					<p>A Six Column CSS Grid System</p>
+		          </div>
+		          <div class="col-2">
+		          	<div class="align-middle">
+			          	<a href="files/sixcss.zip" class="button button-secondary button-large button-x-large">Download</a>
+					</div>
+		          </div>
+		        </div>
+			</div>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-1 card">
+					<nav class="nav_secondary">
+						<ul>
+						  <li><a href="#1">What is sixCSS?</a></li>
+						  <li><a href="#2">Installation</a></li>
+						  <li><a href="#3">Wrapper</a></li>
+						  <li><a href="#4">Grid</a></li>
+						  <li><a href="#5">Header</a></li>
+						  <li><a href="#6">Nav</a></li>
+						  <li><a href="#7">Jumbotron</a></li>
+						  <li><a href="#8">Card</a></li>
+						  <li><a href="#9">Buttons</a></li>
+						  <li><a href="#10">Code</a></li>
+						  <li><a href="#11">Footer</a></li>
+						  <li><a href="#12">Sass Reference</a></li>
+						  <li><a href="#13">License</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-5">
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="1">What is sixCSS?</h2>
+			          	<p>sixCSS is a simple six column CSS flex-box based responsive grid system.<p>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="2">Installation</h2>
+						<p>First, download and unzip the <a href="files/sixcss.zip">sixCSS.zip</a> file.</p>
+						<p>You will see two directories (<code>/css</code> and <code>/sass</code>) and one file (<code>grid_demo.html</code>)</p>
+						<p>Upload the <code>/css</code> folder to your website and add the following reference to the <code>&lt;head&gt;</code> block of your HTML document.</p>
+			          	<pre><code class="code">&lt;link href="css/main.css" rel='stylesheet' type="text/css"&gt;</code></pre>
+						<p>You're now ready to add any of the following sixCSS classes to your HTML page elements.</p>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="3">Wrapper</h2>
+						<p class="sass">Sass developers: the <code>.wrapper</code> class is defined in the <code>/sass/layout/_wrapper.scss</code> file.</p>
+						<p>The <code>.wrapper</code> class is typically added to a <code>&lt;div&gt;</code> element that encloses all of the content of the page.</p>
+<pre>
+<code class="code">&lt;body&gt;
+   &lt;div class="wrapper"&gt;
+    ...EVERYTHING ELSE ON THE PAGE...
+   &lt;/div&gt;
+&lt;/body&gt;
+</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="4">Grid</h2>
+			          	<p class="sass">Sass developers: the <code>.grid</code> class is defined in the <code>/sass/layout/_grid.scss</code> file.</p>
+						<p>To create a grid, use a <code>&lt;div&gt;</code> element with a class of <code>.row</code> and nested <code>&lt;div&gt;</code> elements with class attribute values of <code>col-1, col-2, col-3, col-4, col-5, or col-6</code> as columns within that row.</p>
+						<p>For example, to display a six column grid you'd nest six <code>&lt;div&gt;</code> elements within a row, each with a class of <code>.col-1</code> like this...</p>
+<pre>
+<code class="code">&lt;div class="row"&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					        <div class="row">
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					        </div>
+						</div>
+					</div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<p>...and to create a four column grid you could use something like this...</p>
+<pre>
+<code class="code">&lt;div class="row"&gt;
+  &lt;div class="col-3"&gt;&lt;h4&gt;.col-3&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+  &lt;div class="col-1"&gt;&lt;h4&gt;.col-1&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					        <div class="row">
+					          <div class="col-3 card"><h4>col-3</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					          <div class="col-1 card"><h4>col-1</h4></div>
+					        </div>
+						</div>
+					</div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+<p>...you could even display one column that stretches all the way across....
+<pre>
+<code class="code">&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;&lt;h4&gt;.col-6&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					        <div class="row">
+					          <div class="col-6 card"><h4>col-1</h4></div>
+					        </div>
+						</div>
+					</div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="5">Header</h2>
+			          	<p class="sass">Sass developers: the <code>.header</code> class is defined in the <code>/sass/layout/_header.scss</code> file.</p>
+						<p>The <code>.header</code> class is applied to the <code>&lt;header&gt;</code> tag to provide basic styling to the header.</p>
+<pre>
+<code class="code">&lt;header class="header"&gt;
+   ...
+&lt;/header&gt;
+</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="6">Nav</h2>
+						<p class="sass">Sass developers: the <code>.nav_primary</code> class is defined in the <code>/sass/layout/_nav_primary.scss</code> file.</p>
+						<p>The <code>.nav_primary</code> class is applied to a <code>&lt;nav&gt;</code> element to provide basic styling for the main, often top, horizontal menu.</p>
+<pre>
+<code class="code">&lt;nav class="nav_primary"&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#menu1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu2"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu3"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu4"&gt;Page 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</code>
+</pre>
+						<p>The <code>.nav_secondary</code> class is applied to a <code>&lt;nav&gt;</code> element to provide basic styling for a secondary vertical menu.</p>
+<pre>
+<code class="code">&lt;nav class="nav_secondary"&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#menu1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu2"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu3"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#menu4"&gt;Page 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</code>
+</pre>
+						<p class="sass">Sass developers: the <code>.nav_secondary</code> class is defined in the <code>/sass/layout/_nav_secondary.scss</code> file.</p>
+
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="7">Jumbotron</h2>
+						<p class="sass">Sass developers: the <code>.jumbotron</code> class is defined in the <code>/sass/components/_jumbotron.scss</code> file.</p>
+						<p>To transform your standard header to a Jumbotron, wrap you header items in a <code>&lt;div&gt;</code> and assign a class attribute value of <code>.jumbotron</code></p>
+<pre>
+<code class="code">&lt;header class="header"&gt;
+   &lt;nav class="nav_primary"&gt;
+     &lt;ul&gt;
+       &lt;li&gt;&lt;a href="#menu1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="#menu2"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="#menu3"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="#menu4"&gt;Page 4&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/nav&gt;
+   <span>&lt;div class="jumbotron"&gt;</span>
+      &lt;div class="row"&gt;
+         &lt;div class="col-4"&gt;
+            &lt;h1&gt;sixCSS&lt;/h1&gt;
+            &lt;p&gt;A Six Column CSS Grid System&lt;/p&gt;
+         &lt;/div&gt;
+         &lt;div class="col-2"&gt;
+            &lt;div class="align-middle"&gt;
+               &lt;a href="#" class="button button-secondary button-large button-x-large"&gt;Download&lt;/a&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   <span>&lt;/div&gt;</span>
+&lt;/header&gt;
+</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="8">Card</h2>
+						<p class="sass">Sass developers: the <code>.card</code> class is defined in the <code>/sass/components/_card.scss</code> file.</p>
+						<p>The <code>.card</code> class can be added as an style attribute to provide some basic styling to block level elements. Typically added to a <code>&lt;div&gt;</code> element, the <code>.card</code> class can be useful for adding a bit of definition to grid elements.</p>
+<pre>
+<code class="code">&lt;div class="row"&gt;
+   &lt;div class="col-6-medium <span>card</span>"&gt;&lt;h4&gt;col-6&lt;/h4&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+					        <div class="row">
+					          <div class="col-6 card"><h4>col-6 card</h4></div>
+					        </div>
+			          </div>
+			        </div>
+					<div class="row">
+					  <div class="col-6 card card-white">
+						<h2 id="9">Buttons</h2>
+						<p class="sass">Sass developers: the various button classes are defined in the <code>/sass/components/_buttons.scss</code> file.</p>
+					  	<p>The <code>.button</code> class can be added to a <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> HTML tag.</p>
+					  	<pre><code class="code"><span>&lt;button class="button"&gt;</span>.button class added to a button tag<span>&lt;/button&gt;</span></code></pre>
+					  	<button class="button">.button class added to a button tag</button>
+					  	<pre><code class="code"><span>&lt;a href="#" class="button"&gt;</span>.button class added to an a tag<span>&lt;/a&gt;</span></code></pre>
+					  	<a href="#" class="button">.button class added to an a tag</a>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-6 card card-white">
+						<p>Visual enhancement classes can also be added alongside the <code>.button</code> class to change button appearance:</p>
+			          	<pre><code class="code">&lt;button class="button <span>button-primary</span>"&gt;button button-primary&lt;/button&gt;</code></pre>
+			          	<button class="button button-primary">button button-primary</button>
+			          	<pre><code class="code">&lt;button class="button <span>button-secondary</span>"&gt;button button-secondary&lt;/button&gt;</code></pre>
+			          	<button class="button button-secondary">button button-secondary</button>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-6 card card-white">
+						<p>There are also options to increase the size of the buttons:</p>
+			          	<pre><code class="code">&lt;button class="button button-primary <span>button-large</span>"&gt;button button-primary button-large&lt;/button&gt;</code></pre>
+			          	<button class="button button-primary button-large">button button-primary button-large</button>
+			          	<pre><code class="code">&lt;button class="button button-primary <span>button-x-large</span>"&gt;button button-primary button-x-large&lt;/button&gt;</code></pre>
+			          	<button class="button button-primary button-x-large">button button-primary button-x-large</button>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="10">Code</h2>
+						<p class="sass">Sass developers: the <code>.code</code> class is defined in the <code>/sass/components/_code.scss</code> file.</p>
+						<p>The <code>.code</code> class is applied to the <code>&lt;code&gt;</code> tag to provide styling for the display of code snippets.</p>
+<pre>
+<code class="code">&lt;code class="code"&gt;
+   &lt;p&gt;This is a snippet of HTML code.&lt;/p&gt;
+&lt;/code&gt;</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="11">Footer</h2>
+						<p class="sass">Sass developers: the <code>.footer</code> class is defined in the <code>/sass/layout/_footer.scss</code> file.</p>
+						<p>The .footer class is applied to the <code>&lt;footer&gt;</code> tag to provide basic styling to the footer.</p>
+<pre>
+<code class="code">&lt;footer class="<span>footer</span>"&gt;
+   &lt;p&gt;Footer Text Goes here&lt;/p&gt;
+&lt;/footer&gt;
+</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+			          	<h2 id="12">Sass Reference</h2>
+						<p>File structure for the sixCSS project's Sass files:</p>
+<pre>
+<code class="code">
+/sass
+   /base
+      _base.scss
+      _reset.scss
+      _typography.scss
+   /components
+      _buttons.scss
+      _card.scss
+      _code.scss
+      _jumbotron.scss
+      _nav_primary.scss
+      _nav_secondary.scss
+   /layout
+      _alignment.scss
+      _footer.scss
+      _grid.scss
+      _header.scss
+      _visibility.scss
+      _wrapper.scss
+   /pages
+   /themes
+      _sixcss.scss
+   /utils
+      _functions.scss
+      _mixins.scss
+      _variables.scss
+   /vendors
+   main.scss
+</code>
+</pre>
+					  </div>
+					</div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+
+						<h3 id="12a">Breakpoints</h3>
+						<p>Several breakpoints are defined in <code>/sass/utils/_variables.scss</code>:</p>
+<pre>
+<code class="code">$small: 450px;
+$medium: 600px;
+$large: 900px;
+$x-large: 1200px;
+</code>
+</pre>
+					  </div>
+					</div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+						<h3 id="12b">Colors</h3>
+						<p>Primary and secondary colors along with several standard colors are defined in <code>/sass/utils/_variables.scss</code>:</p>
+<pre>
+<code class="code">$primary-color: #8c2840;
+$secondary-color: #32826f;
+$white: #fff;
+$black: #000;
+$red: #f00;</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+						<h3 id="12c">Typography</h3>
+						<p>Typography import is defined in <code>/sass/base/_typography.scss</code></p>
+<pre>
+<code class="code">@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans|Source+Code+Pro');</code>
+</pre>
+						<p>Fonts are defined in <code>/sass/utils/_variables.scss</code>:</p>
+<pre>
+<code class="code">$serif: 'Crimson Text', serif;
+$sans-serif: 'Open Sans', sans-serif;
+$mono: 'Source Code Pro', monospace;</code>
+</pre>
+			          </div>
+			        </div>
+			        <div class="row">
+			          <div class="col-6 card card-white">
+						<h2 id="13">License</h2>
+			          	<p>sixCSS is made available under the <a href="https://opensource.org/licenses/GPL-3.0" target="_blank">GNU General Public License version 3</a>.</p>
+			          </div>
+			        </div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<p>Richie Carey &lt;<a href="mailto:richiecarey@gmail.com">richiecarey@gmail.com</a>&gt;</p>
+		</footer>
+	</div>
+	</body>
+</html>

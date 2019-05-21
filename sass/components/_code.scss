@@ -1,0 +1,12 @@
+.code {
+	background-color: #ffc;
+	border: 1px solid black;
+	color: $black;
+	display: inline-block;
+	font-weight: bold;
+	padding: 1rem 1rem;
+	white-space: pre-wrap;
+	span {
+		color: $red;
+	}
+}
