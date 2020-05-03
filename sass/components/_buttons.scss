@@ -1,43 +1,43 @@
 .button {
-	background-color: darken($white, 15%);
-	border: 1px solid lighten($black, 40%);
-	border-radius: 0.3rem;
-	box-shadow: 1px 1px $black;
-	color: $black;
-	cursor: pointer;
-	display: inline-block;
-	font-family: $sans-serif;
-	margin: 0.5rem;
-	padding: 0.5rem;
-	text-decoration: none;
+  background-color: darken($white, 15%);
+  border: 1px solid lighten($black, 40%);
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px $black;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $sans-serif;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
 }
 .button:hover {
-	background-color: darken($white, 10%);
-	box-shadow: 1px 1px lighten($black, 10%);
+  background-color: darken($white, 10%);
+  box-shadow: 1px 1px lighten($black, 10%);
 }
 .button-primary {
-	background-color: $primary-color;
-	color: $white;
+  background-color: $primary-color;
+  color: $white;
 }
 .button-primary:hover {
-	background: lighten($primary-color, 5%);
+  background: lighten($primary-color, 5%);
 }
 .button-secondary {
-	background: $secondary-color;
-	color: $white;
+  background: $secondary-color;
+  color: $white;
 }
 .button-secondary:hover {
-	background-color: lighten($secondary-color, 5%);
+  background-color: lighten($secondary-color, 5%);
 }
 .button-large {
-	padding: 1rem;
-	font-size: 1.2em;
-	text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 @media screen and (min-width: $medium) {
-	.button-x-large {
-		padding: 1.2rem;
-		font-size: 1.4em;
-		text-transform: uppercase;
-	}
+  .button-x-large {
+    padding: 1.2rem;
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
 }

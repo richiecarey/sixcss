@@ -1,0 +1,29 @@
+{
+  "name": "sixcss",
+  "version": "1.0.0",
+  "description": "A simple six column responsive CSS framework.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richiecarey/sixcss.git"
+  },
+  "author": "Richie Carey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richiecarey/sixcss/issues"
+  },
+  "homepage": "https://github.com/richiecarey/sixcss#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2"
+  }
+}

@@ -1,40 +1,50 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, 
-*:before, 
+*,
+*:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 body {
-	font-family: $serif;
-	width: 100%;
+  font-family: $serif;
+  width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: $sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans-serif;
 }
 main {
-	h1, h2, h3, h4, h5, h6 {
-		color: $primary-color;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary-color;
+  }
 }
 p {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 a {
-	color: $secondary-color;
-	text-decoration: none;
+  color: $secondary-color;
+  text-decoration: none;
 }
 a:hover {
-	color: lighten($secondary-color,10%);
-	text-decoration: underline;
+  color: lighten($secondary-color, 10%);
+  text-decoration: underline;
 }
 /* medium */
 @media screen and (min-width: $medium) {
-	p {
-		font-size: 1.4rem;
-	}
+  p {
+    font-size: 1.4rem;
+  }
 }
 pre {
-	font-family: $mono;	
+  font-family: $mono;
 }
