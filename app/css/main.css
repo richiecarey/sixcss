@@ -403,10 +403,20 @@ body {
   font-family: "Crimson Text", serif;
   width: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif; }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   color: #8c2840; }
 
 p {
@@ -424,6 +434,7 @@ a:hover {
 @media screen and (min-width: 600px) {
   p {
     font-size: 1.4rem; } }
+
 pre {
   font-family: "Source Code Pro", monospace; }
 
@@ -450,45 +461,40 @@ pre {
 /********************************************************************************/
 /* medium */
 @media screen and (min-width: 600px) {
-  .col-1, .col-2, .col-3 {
-    width: calc( 3 * 98.5% / 6); }
-
-  .col-4, .col-5, .col-6 {
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: calc(3 * 98.5% / 6); }
+  .col-4,
+  .col-5,
+  .col-6 {
     width: 100%; }
-
   .col-1-offset {
-    margin-right: calc( 95% / 6); }
-
+    margin-right: calc(95% / 6); }
   main [class*="col-"] {
     margin-left: 0.75%; } }
+
 /* large */
 @media screen and (min-width: 900px) {
   .col-1 {
-    width: calc( 95% / 6); }
-
+    width: calc(95% / 6); }
   .col-2 {
-    width: calc( 2 * 98% / 6); }
-
+    width: calc(2 * 98% / 6); }
   .col-3 {
-    width: calc( 3 * 99% / 6); }
-
+    width: calc(3 * 99% / 6); }
   .col-4 {
-    width: calc( 4 * 99.5% / 6); }
-
+    width: calc(4 * 99.5% / 6); }
   .col-5 {
-    width: calc( 5 * 99.75% / 6); }
-
+    width: calc(5 * 99.75% / 6); }
   .col-6 {
     width: 100%; }
-
   .col-1-offset {
-    margin-right: calc( 95% / 6); }
-
+    margin-right: calc(95% / 6); }
   main [class*="col-"]:first-child {
     margin-left: 0; }
-
   main [class*="col-"]:not(:first-child) {
     margin-left: 1%; } }
+
 .header {
   background-color: rgba(0, 0, 0, 0.3);
   color: #000;
@@ -512,7 +518,8 @@ pre {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   text-align: center; }
-  .footer p, .footer a {
+  .footer p,
+  .footer a {
     color: #e6e6e6;
     font-family: "Open Sans", sans-serif;
     font-size: 0.9rem; }
@@ -528,21 +535,21 @@ pre {
 @media screen and (min-width: 600px) {
   .hide-at-medium {
     visibility: hidden; }
-
   .show-at-medium {
     visibility: visible; } }
+
 @media screen and (min-width: 900px) {
   .hide-at-large {
     visibility: hidden; }
-
   .show-at-large {
     visibility: visible; } }
+
 @media screen and (min-width: 1200px) {
   .hide-at-x-large {
     visibility: collapse; }
-
   .show-at-x-large {
     visibility: visible; } }
+
 .wrapper {
   width: 100%;
   max-width: 1600px;
@@ -589,6 +596,7 @@ pre {
     padding: 1.2rem;
     font-size: 1.4em;
     text-transform: uppercase; } }
+
 .card {
   background-color: #f7f7f7;
   box-shadow: 1px 1px 0 #a6a6a6;
@@ -634,6 +642,7 @@ pre {
       font-size: 2rem; }
     .jumbotron p {
       font-size: 1.8rem; } }
+
 /* large */
 @media screen and (min-width: 900px) {
   .jumbotron {
@@ -644,6 +653,7 @@ pre {
       font-size: 2.2rem; }
     .jumbotron p {
       font-size: 2rem; } }
+
 /* x-large */
 @media screen and (min-width: 1200px) {
   .jumbotron {
@@ -654,6 +664,7 @@ pre {
       font-size: 2.4rem; }
     .jumbotron p {
       font-size: 2.2rem; } }
+
 /* default */
 .nav_primary {
   background-color: #8c2840;
@@ -686,6 +697,7 @@ pre {
       padding: 0.5rem;
       text-align: none;
       border-bottom: none; } }
+
 .nav_secondary {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem; }
@@ -707,9 +719,9 @@ pre {
 @media screen and (min-width: 900px) {
   .nav_secondary {
     font-size: 1.2rem; }
-
   ul li {
     border-bottom: 0; } }
+
 .sass {
   color: #000;
   font-size: 0.9rem;
@@ -718,5 +730,3 @@ pre {
   .sass code {
     font-weight: bold;
     font-style: normal; }
-
-/*# sourceMappingURL=main.css.map */
