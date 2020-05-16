@@ -417,7 +417,7 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  color: blue; }
+  color: #8c2840; }
 
 p {
   font-size: 1.2rem; }
@@ -573,11 +573,11 @@ pre {
   box-shadow: 1px 1px #1a1a1a; }
 
 .button-primary {
-  background-color: blue;
+  background-color: #8c2840;
   color: #fff; }
 
 .button-primary:hover {
-  background: #1a1aff; }
+  background: #a02e49; }
 
 .button-secondary {
   background: #32826f;
@@ -618,7 +618,7 @@ pre {
 
 /* default */
 .jumbotron {
-  background: linear-gradient(blue, #333333);
+  background: linear-gradient(#8c2840, #333333);
   background-image: url("../img/jumbotron.png");
   display: block;
   padding: 2.4rem 1rem;
@@ -667,7 +667,7 @@ pre {
 
 /* default */
 .nav_primary {
-  background-color: blue;
+  background-color: #8c2840;
   font-family: "Open Sans", sans-serif;
   font-size: 0.75rem; }
   .nav_primary ul {
