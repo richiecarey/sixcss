@@ -22,8 +22,6 @@
   "homepage": "https://github.com/richiecarey/sixcss#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^3.2.1",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5",
     "stylelint": "^13.3.3",
